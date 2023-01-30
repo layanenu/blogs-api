@@ -1,3 +1,5 @@
+const { PostCategory } = require('../models/PostCategory');
+
 module.exports = (sequelize, DataTypes) => {
   const BlogPost = sequelize.define('BlogPost', {
       id: {
@@ -37,6 +39,12 @@ module.exports = (sequelize, DataTypes) => {
     BlogPost.associate = (models) => {
       BlogPost.belongsTo(models.User, {
         foreignKey: 'user_id', as: 'user',
+      });
+      BlogPost.belongsToMany(models.Category, {
+        as: 'categories',
+        through: 'PostCategory', // utilizando o model especificado na opção through como tabela de associação. 
+        foreignKey: 'category_id',
+        otherKey: 'post_id',
       });
     };
 
