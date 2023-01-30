@@ -24,6 +24,10 @@ const getAllUsers = async () => {
   }
 };
 
+// const getUserBy = async () => {
+//   const users = await User.findAll();
+// };
+
 module.exports = {
   createUser,
   getAllUsers,
