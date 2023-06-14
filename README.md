@@ -1,4 +1,4 @@
-<strong>Blogs Api :car: </strong>
+<strong>Blogs Api 👩🏻‍💻 </strong>
 
 <strong>:wavy_dash: Sobre</strong>
 
@@ -30,12 +30,12 @@ Obs: O seu docker-compose precisa estar na versão 1.29 ou superior.
  
 Clone o repositório:
 ```bash
-git clone git@github.com:layanenu/car-shop.git
+git clone git@github.com:layanenu/blogs-api.git
 ```
 
 Entre no diretório car-shop:
 ```bash
-cd car-shop
+cd blogs-api
 ```
 
 Instale as dependências do projeto:
