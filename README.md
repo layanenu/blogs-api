@@ -1,13 +1,52 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+<strong>Blogs Api :car: </strong>
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+<strong>:wavy_dash: Sobre</strong>
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+Construção de uma API com CRUD para gerenciar a produção de conteúdo para um blog. Foi feito utilizando um banco de dados SQL. A API foi construída utilizando os princípios REST e seguindo a arquitetura MSC (Model, Service, Controller).
+
+Suas principais funcionalidades são:
+
+* Busca, cadastro, login, autenticação e remoção de pessoas usuárias;
+* Busca e cadastro de categorias de posts do blog;
+* Busca, cadastro, atualização e remoção de posts do blog.
+
+<details>
+  <summary><strong> Stacks </strong></summary><br />
+
+  * Node JS
+  * MySQL
+  * Express
+  * Json Web Token (JWT)
+  * Sequelize
+  * Docker
+  * Joi
+
+</details>
+
+<details>
+<summary><strong>:whale: Rodando com o Docker</strong></summary><br />
+
+Obs: O seu docker-compose precisa estar na versão 1.29 ou superior.
+ 
+Clone o repositório:
+```bash
+git clone git@github.com:layanenu/car-shop.git
+```
+
+Entre no diretório car-shop:
+```bash
+cd car-shop
+```
+
+Instale as dependências do projeto:
+```bash
+npm install
+```
+  
+Suba a orquestração de containers:
+```bash
+docker-compose up -d
+```
+Esses serviços irão inicializar um container chamado ``blogs_api`` e outro chamado ``blogs_api_db``
+  
+</details>
