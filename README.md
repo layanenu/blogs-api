@@ -52,6 +52,12 @@ Esses serviços irão inicializar um container chamado ``blogs_api`` e outro cha
 </details>
 
 REQUISITOS <br/>
+Neste projeto você vai desenvolver uma API e um banco de dados para a produção de conteúdo para um blog!<br/>
+Você deverá desenvolver uma aplicação em Node.js usando o pacote sequelize para fazer um CRUD de posts.<br/>
+Você deverá desenvolver endpoints que estarão conectados ao seu banco de dados seguindo os princípios do REST;<br/>
+Para fazer um post é necessário usuário e login, portanto será trabalhada a relação entre user e post;<br/>
+Será necessária a utilização de categorias para os posts, trabalhando, assim, a relação de posts para categories e de categories para posts.
+<br/><br/>
 1 - Crie migrations para as tabelas users, categories, blog_posts, posts_categories<br/>
 2 - Crie o modelo User em src/models/User.js com as propriedades corretas<br/>
 3 - Sua aplicação deve ter o endpoint POST /login<br/>
